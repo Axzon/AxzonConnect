@@ -1,0 +1,73 @@
+{
+	"version" : "1.0.0",
+	"tagID" : {
+		"EPC" : "E2C245002000056685340536",
+		"TID" : "E2C245002000056685340536"
+	},	
+	"inventories" : [ 
+		{ "timestamp" : "2024-12-25T12:07:44.345000Z", "state" : "LOGGING", "rtc" : "2024-12-22T12:07:30Z", "nextSample" : 15, "temp" : 23.2, "battPresent" : true, "battVoltage" : 3.11, "sensorCode" : 125, "onChipRSSI" : 18, "channel" : 905250,	"RSSI" : -56.0,	"packetPC" : "3F00", "XPC_W1" : "0424", "readerHost" : "FX9600F10AE0", "readerMAC" : "84:24:8D:EE:2A:E0"},
+		{ "timestamp" : "2024-12-25T12:07:49.234000Z", "state" : "LOGGING", "rtc" : "2024-12-22T12:12:30Z", "nextSample" : 16, "temp" : 23.4, "battPresent" : true, "battVoltage" : 3.10, "sensorCode" : 115, "onChipRSSI" : 12, "channel" : 912250,	"RSSI" : -51.2,	"packetPC" : "3F00", "XPC_W1" : "0424", "readerHost" : "FX9600F10AE0", "readerMAC" : "84:24:8D:EE:2A:E0"}
+		],
+	"loggerConf" : {
+		"logging": {
+			"interval": 30,
+			"units": "seconds",
+			"delayedStart": 1,
+			"numberOfSamples": 4096
+		},
+		"temperatureLowerLimit": {
+			"limit": -5.0,
+			"alarmDelay": 1
+		},
+		"temperatureUpperLimit": {
+			"limit": 42.0,
+			"alarmDelay": 1	
+		},
+		"led": {
+			"enabled": true,
+			"mode": "ON_DEMAND",
+			"offTime": 2,
+			"onTime": 50
+		},
+		"fingerSpot": {
+			"enabled": true,
+			"useForLoggerArming": false
+		},
+		"antiTamper": {
+			"enabled": false,
+			"polarity": "DETECT_CONNECTION_OR_LIGHT"
+		}
+	},
+	"loggerArming" : {
+		"succesful" : true,
+		"errorNumber" : 0,
+		"errorMessage" : null,
+		"timestamp" : "2024-10-25T12:00:00Z",
+		"fingerSpotTimestamp" : null
+	},	
+	"loggerAlarms" : {
+		"alarms" : ["TEMPERATURE", "LOW_TEMPERATURE", "HIGH_TEMPERATURE", "TAMPER", "LOW_BATTERY", "INITIAL_LOW_BATTERY"],
+		"temperatureViolationTimestamp" : "2024-12-25T12:07:44.345000Z",
+		"temperatureViolationValue" : 55.5,
+		"tamperViolationTimestamp" : "2024-12-22T12:03:45.778000Z",
+		"batteryAlarmTimestamp" : null
+	},
+	"loggedData" : [
+		{ "timestamp" : "2024-10-25T12:00:30Z", "temp" : 23.6, "tamper" : false },
+		{ "timestamp" : "2024-10-25T12:01:00Z", "temp" : 16.4, "tamper" : false },
+		{ "timestamp" : "2024-10-25T12:01:30Z", "temp" : 5.2, "tamper" : false },
+		{ "timestamp" : "2024-10-25T12:02:00Z", "temp" : -6.0, "tamper" : false },
+		{ "timestamp" : "2024-10-25T12:02:30Z", "temp" : -14.3, "tamper" : false },
+		{ "timestamp" : "2024-10-25T12:03:00Z", "temp" : -18.1, "tamper" : false },
+		{ "timestamp" : "2024-10-25T12:03:30Z", "temp" : -18.4, "tamper" : false },	
+		{ "timestamp" : "2024-10-25T12:04:00Z", "temp" : -18.6, "tamper" : false },
+		{ "timestamp" : "2024-10-25T12:04:30Z", "temp" : -18.2, "tamper" : false },
+		{ "timestamp" : "2024-10-25T12:05:00Z", "temp" : -17.7, "tamper" : false },	
+		{ "timestamp" : "2024-10-25T12:05:30Z", "temp" : -17.5, "tamper" : false },		
+		{ "timestamp" : "2024-10-25T12:06:00Z", "temp" : -17.9, "tamper" : false },
+		{ "timestamp" : "2024-10-25T12:06:30Z", "temp" : -18.1, "tamper" : false },	
+		{ "timestamp" : "2024-10-25T12:07:00Z", "temp" : -18.3, "tamper" : false },
+		{ "timestamp" : "2024-10-25T12:07:30Z", "temp" : -18.7, "tamper" : false }	
+	]
+}
+

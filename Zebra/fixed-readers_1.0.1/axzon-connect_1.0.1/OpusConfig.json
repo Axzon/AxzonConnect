@@ -1,0 +1,109 @@
+{
+	"version" : "1.0.0",
+	"configId" : {
+		"id" : "Config A",
+		"version" : "2.0",
+		"company" : "Axzon",
+		"author" : "Martin",
+		"location" : "Austin, TX",
+		"timestamp" : "2025-01-15T17:15:00Z"
+	},
+	"logging" : {	
+		"interval" : {
+			"value" : 5, 
+			"units" : "minutes", 		
+			"options" : [
+				{ "value" : 1, "units" : "seconds" },
+				{ "value" : 5, "units" : "seconds" },
+				{ "value" : 10, "units" : "seconds" },
+				{ "value" : 15, "units" : "seconds" },
+				{ "value" : 20, "units" : "seconds" },
+				{ "value" : 25, "units" : "seconds" },
+				{ "value" : 30, "units" : "seconds" },
+				{ "value" : 1, "units" : "minutes" },
+				{ "value" : 2, "units" : "minutes" },
+				{ "value" : 3, "units" : "minutes" },
+				{ "value" : 4, "units" : "minutes" },
+				{ "value" : 5, "units" : "minutes" },
+				{ "value" : 6, "units" : "minutes" },
+				{ "value" : 7, "units" : "minutes" },
+				{ "value" : 10, "units" : "minutes" },
+				{ "value" : 15, "units" : "minutes" },
+				{ "value" : 20, "units" : "minutes" },
+				{ "value" : 25, "units" : "minutes" },
+				{ "value" : 30, "units" : "minutes" },
+				{ "value" : 35, "units" : "minutes" },			
+				{ "value" : 40, "units" : "minutes" },	
+				{ "value" : 1, "units" : "hours" },
+				{ "value" : 2, "units" : "hours" },
+				{ "value" : 3, "units" : "hours" },
+				{ "value" : 4, "units" : "hours" },		
+				{ "value" : 5, "units" : "hours" },
+				{ "value" : 6, "units" : "hours" },
+				{ "value" : 7, "units" : "hours" },
+				{ "value" : 8, "units" : "hours" }		
+			]
+		},
+		"delayedStart" : {
+			"value" : 1,
+			"units" : "Sample Periods",
+			"options" : [0, 1, 2, 3, 4, 5, 6, 7]
+		},
+		"numberOfSamples" : {
+			"value" : 4096,
+			"options" : [512, 1024, 1536, 2048, 2560, 3072, 3584, 4096]
+		}
+	},		
+	"temperatureLimits" : {		
+	    "lowerLimit" : {
+			"value" : -5.0,
+			"units" : "Degrees C",
+			"minimum" : -128.0,
+			"maximum" : 127.9375,
+			"alarmDelay" : {
+				"value" : 1,
+				"units" : "samples",
+				"options" : [0, 1, 2, 3, 4, 5, 6, 7]
+			}
+		},
+		"upperLimit" : {
+			"value" : 42.0,
+			"units" : "Degrees C",
+			"minimum" : -128.0,
+			"maximum" : 127.9375,
+			"alarmDelay" : {
+				"value" : 1,
+				"units" : "samples",
+				"options" : [0, 1, 2, 3, 4, 5, 6, 7]
+			}
+		}
+	},
+	"led" : {	
+		"enabled" : true,
+		"mode": {
+			"value": "CONTINUOUS",
+			"options": [ "CONTINUOUS", "ON_DEMAND" ]
+		},
+		"offTime" : {
+			"value" : 2,
+			"units" : "seconds",
+			"options" : [2, 4, 6, 8, 10, 12, 14, 16, 18, 20, 22, 24, 26, 28, 30, 32, 34, 36, 38, 40, 42, 44, 46, 48, 50, 52, 54, 56, 58, 60, 62, 64]
+		},
+		"onTime" : {
+			"value" : 30,
+			"units" : "milliseconds",
+			"options" : [10, 20, 30, 40, 50, 60, 70, 80, 90, 100, 110, 120, 130, 140, 150, 160, 170, 180, 190, 200, 210, 220, 230, 240, 250, 260, 270, 280, 290, 300, 310, 320]
+		}
+	},
+	"fingerSpot" : {
+		"enabled" : false,
+		"useForLoggerArming" : false
+	},
+	"antiTamper" : {
+		"enabled" : false,
+		"polarity" : {
+		"value" : "DETECT_CONNECTION_OR_LIGHT",
+		"options" : ["DETECT_CONNECTION_OR_LIGHT", "DETECT_DISCONNECTION_OR_DARKNESS"]
+		}
+	}
+}

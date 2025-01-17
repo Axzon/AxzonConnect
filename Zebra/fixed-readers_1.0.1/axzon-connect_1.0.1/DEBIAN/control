@@ -1,0 +1,8 @@
+Package: axzon-connect
+Version: 1.0.1
+Source: base
+Priority: optional
+Architecture: all
+Maintainer: Zebra
+Description: "AxzonConnect"
+APP_TYPE: DA
