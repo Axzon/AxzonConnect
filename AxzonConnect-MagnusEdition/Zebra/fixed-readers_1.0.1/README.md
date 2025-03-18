@@ -27,26 +27,13 @@ The AxzonConnect distribution package was built using the process described [her
    ![Management Events Interface](https://axzon-docs-public.s3.us-east-2.amazonaws.com/images/Zebra+AxzonConnect/readme-1.png)
 4. **Install the AxzonConnect Application:**
    Use the distribution package `axzon-connect_1.0.1.deb`. Install it through the reader's web interface under the **Applications** menu:
-   ![Install Application](https://axzon-docs-public.s3.us-east-2.amazonaws.com/images/Zebra+AxzonConnect/readme-2.png)
-5. **Start and Stop the Program as Needed:**
-   - **Warning:** Keep tags not intended for immediate logging away from the reader's antenna. The program will automatically start the logging process for all new tags.
+   ![Install Application](https://axzon-docs-public.s3.us-east-2.amazonaws.com/images/Zebra+AxzonConnect/readme-2-magnus-version.png)
+5. **Start and stop the program as desired**
 
 ---
 
 ## Features of AxzonConnect
 
-The AxzonConnect program performs the following tasks:
-
-- When it finds new tags in **Sleep mode**, it writes to every tag the logging configuration specified in the local file `OpusConfig.json` located in the `/apps` directory and then arms the tags. The logging process starts for all new tags. It reports the status of each tag following the format of the `OpusStatus.json` file.
-
-- When it finds tags that are **logging** or **finished logging**, it reports the tag status and the logged data following the format of the `OpusStatus.json` file. There could be multiple reports for each tag.
-
-- For tags that remain **15 or more seconds** in the field of view of the reader, the program reports the tag status every 15 seconds.
-
----
-
-### Configuration
-The `OpusConfig.json` file located in the `/apps` directory of the reader can be updated with any valid configuration as desired.  
-**Important:** Restart the AxzonConnect program after updating the configuration file to apply changes.
+AxzonConnect Magnus Edition continuously looks for Magnus® S3 tags and reports the temperature measurement, among other parameters, every ten seconds. This version only supports Temperature Measurements, not Sensor Code measurements. The next version of AxzonConnect Magnus Edition will support Sensor Code measurements.
 
 ---
