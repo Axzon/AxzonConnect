@@ -1,0 +1,33 @@
+{
+    "version": "1.0.0",
+    "timestamp": "2025-03-17T18:04:24.818673Z",
+    "TID": "E282403D000205D608990A7A",
+    "EPC": "3200F2106160000000039602",
+    "readerHost": "FX9600F10AE0",
+    "readerMAC": "84:24:8D:F1:0A:E0",
+    "antennas": [
+        1
+    ],
+    "numReadings": 11,
+    "avgRssi": -54.727272727272727,
+    "avgOnChipRssi": 11.181818181818182,
+    "temperature": {
+        "celsius": 21.861652542372894,
+        "fahrenheit": 71.350974576271213,
+        "avgOnChipRssi": 14.0,
+        "avgRssi": -52.25,
+        "numReadings": 8,
+        "antennas": [
+            1
+        ]
+    },
+    "sensorCode": {
+        "code": null,
+        "normalizedFreq": null,
+        "avgOnChipRssi": null,
+        "avgRssi": null,
+        "numReadings": 0,
+        "antennas": [
+        ]
+    }
+}
